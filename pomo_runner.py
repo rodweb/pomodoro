@@ -15,7 +15,7 @@ pomo_state = None
 def notify_user(title, message):
     if ENABLE_DESKTOP_NOTIFS:
         try:
-            call(['notify-send', title, message, '-t', '1000'])
+            call(['notify-send', title, message, '-t', '5000'])
         except FileNotFoundError:
             print("Skipping desktop notification because `notify-send` wasn't recognized.")
 
